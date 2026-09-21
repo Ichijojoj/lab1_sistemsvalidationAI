@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+umap-learn
+tqdm
+pillow
+python-docx
+jupyter
+nbformat
+nbclient
+ipykernel
+torch
+jax
+jaxlib
+optax
