@@ -1,0 +1,136 @@
+{
+  "train_file": "F:\\laba1\\pythonProject\\V2\\d2.csv",
+  "test_file": "F:\\laba1\\pythonProject\\V2\\mnist_test.csv",
+  "structure_train": {
+    "name": "d2.csv (train)",
+    "n_objects": 60000,
+    "n_features": 784,
+    "image_shape": [
+      28,
+      28
+    ],
+    "n_classes": 10,
+    "label_min": 0,
+    "label_max": 9,
+    "pixel_min": 0.0,
+    "pixel_max": 255.0,
+    "pixel_mean": 33.31842041015625,
+    "dtype": "float32"
+  },
+  "structure_test": {
+    "name": "mnist_test.csv",
+    "n_objects": 10000,
+    "n_features": 784,
+    "image_shape": [
+      28,
+      28
+    ],
+    "n_classes": 10,
+    "label_min": 0,
+    "label_max": 9,
+    "pixel_min": 0.0,
+    "pixel_max": 255.0,
+    "pixel_mean": 33.79122543334961,
+    "dtype": "float32"
+  },
+  "duplicates": {
+    "n_duplicate_groups": 0,
+    "n_extra_copies": 0,
+    "n_same_label_extra": 0,
+    "n_conflict_groups": 0,
+    "n_conflict_objects": 0,
+    "conflict_indices": [],
+    "same_label_indices": []
+  },
+  "n_anomalies_full": 572,
+  "anomaly_share_full": 0.009533333333333333,
+  "anomaly_reason_counts": {
+    "intensity_mean_outlier": 362,
+    "fill_outlier": 263,
+    "far_from_class_centroid": 234,
+    "intensity_std_outlier": 79
+  },
+  "imbalance_full": {
+    "n": 60000,
+    "min_class": 5,
+    "max_class": 1,
+    "min_count": 5421,
+    "max_count": 6742,
+    "imbalance_ratio": 1.243681977494927,
+    "entropy": 2.3011591727032914,
+    "normalized_entropy": 0.9993807306860915,
+    "majority_share": 0.11236666666666667
+  },
+  "imbalance_train": {
+    "n": 51000,
+    "min_class": 5,
+    "max_class": 1,
+    "min_count": 4608,
+    "max_count": 5731,
+    "imbalance_ratio": 1.2437065972222223,
+    "entropy": 2.301159178124984,
+    "normalized_entropy": 0.9993807330407025,
+    "majority_share": 0.11237254901960785
+  },
+  "imbalance_balanced": {
+    "n": 57310,
+    "min_class": 0,
+    "max_class": 0,
+    "min_count": 5731,
+    "max_count": 5731,
+    "imbalance_ratio": 1.0,
+    "entropy": 2.3025850929940455,
+    "normalized_entropy": 0.9999999999999998,
+    "majority_share": 0.1
+  },
+  "imbalance_cleaned": {
+    "n": 50520,
+    "min_class": 5,
+    "max_class": 1,
+    "min_count": 4569,
+    "max_count": 5650,
+    "imbalance_ratio": 1.2365944407966731,
+    "entropy": 2.301205504889595,
+    "normalized_entropy": 0.9994008524989376,
+    "majority_share": 0.1118368962787015
+  },
+  "split": {
+    "train": 51000,
+    "val": 9000,
+    "test": 10000,
+    "balanced_train": 57310,
+    "cleaned_train": 50520,
+    "val_fraction": 0.15,
+    "stratified": true,
+    "seed": 42
+  },
+  "representativeness": {
+    "max_class_share_diff": 0.0039000000000000007,
+    "mean_class_share_diff": 0.001523333333333332,
+    "mean_pixel_train": 33.31842041015625,
+    "mean_pixel_test": 33.79122543334961,
+    "std_pixel_train": 78.56749725341797,
+    "std_pixel_test": 79.17245483398438,
+    "mean_centroid_shift": 112.81223945617675
+  },
+  "centroid_shift_by_class": {
+    "0": 108.13983154296875,
+    "1": 57.35886764526367,
+    "2": 104.61909484863281,
+    "3": 127.09526824951172,
+    "4": 85.67699432373047,
+    "5": 102.4010009765625,
+    "6": 176.01380920410156,
+    "7": 89.94995880126953,
+    "8": 153.84246826171875,
+    "9": 123.02510070800781
+  },
+  "normalization": "x / 255.0 -> [0, 1]",
+  "balancing": "oversampling меньшинства до размера majority с возвращением",
+  "cleaning": "удаление дубликатов (кроме первого), конфликтов меток и статистических выбросов",
+  "umap_error": null,
+  "pca_explained": [
+    0.0985548347234726,
+    0.07024823874235153
+  ]
+}
